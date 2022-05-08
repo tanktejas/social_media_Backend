@@ -1,16 +1,16 @@
 const express = require("express");
-const uniqid = require("uniqid");
+// const uniqid = require("uniqid");
 
 // All db's
-const image = require("./DB/image_db");
-const login = require("./DB/login");
-const userreq = require("./DB/user_sent_accept_req");
-const userpostcnt = require("./DB/username_with_their_post_cnt");
-const usermessage = require("./DB/user_message");
+// const image = require("./DB/image_db");
+// const login = require("./DB/login");
+// const userreq = require("./DB/user_sent_accept_req");
+// const userpostcnt = require("./DB/username_with_their_post_cnt");
+// const usermessage = require("./DB/user_message");
 
 const app = express();
 const port = process.env.PORT || 3004;
-const cors = require("cors");
+// const cors = require("cors");
 
 // app.use(cors());
 //multer to store file in local directory.
@@ -305,6 +305,6 @@ app.get("/", (req, res) => {
 //   }
 // });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3004, () => {
   console.log(`Server is up at ${port}`);
 });
