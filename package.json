@@ -1,20 +1,23 @@
 {
   "name": "aws_practice",
   "version": "1.0.0",
-  "description": "cool app", 
+  "description": "cool app",
+  "scripts": {
+    "start": "node server.js"
+  },
   "engines": {
     "node": "14.17.5"
-    },
-  "scripts": { 
-    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
-    "aws-sdk": "^2.1094.0",
+    "aws-sdk": "^2.1130.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "express": "^4.18.1",
     "fs": "^0.0.1-security",
     "mongoose": "^6.2.9",
     "mongoose-validator": "^2.1.0",
