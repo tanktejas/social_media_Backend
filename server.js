@@ -10,7 +10,7 @@ const userpostcnt = require("./DB/username_with_their_post_cnt");
 const usermessage = require("./DB/user_message");
 
 const app = express();
-const port = 3004;
+const port = process.env.PORT || 3004;
 const cors = require("cors");
 
 app.use(cors());
