@@ -22,7 +22,7 @@ const cors = require("cors");
 //   },
 // });
 
-const upload = multer({ storage }).single("file");
+// const upload = multer({ storage }).single("file");
 
 //add if not configure.
 
