@@ -13,15 +13,15 @@ const app = express();
 const port = 3004 || process.env.PORT;
 const cors = require("cors");
 
-app.use(cors());
+// app.use(cors());
 //multer to store file in local directory.
-const multer = require("multer");
+// const multer = require("multer");
 
-const storage = multer.memoryStorage({
-  destination: function (req, file, callback) {
-    callback(null, "");
-  },
-});
+// const storage = multer.memoryStorage({
+//   destination: function (req, file, callback) {
+//     callback(null, "");
+//   },
+// });
 
 const upload = multer({ storage }).single("file");
 
@@ -36,17 +36,17 @@ const upload = multer({ storage }).single("file");
 // AWS.config.update(SESConfig);
 
 //aws s3 access object
-const S3 = require("aws-sdk/clients/s3");
-const AWS = require("aws-sdk");
-const bodyParser = require("body-parser");
+// const S3 = require("aws-sdk/clients/s3");
+// const AWS = require("aws-sdk");
+// const bodyParser = require("body-parser");
 
-const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_ID,
-  secretAccessKey: process.env.AWS_SECERE,
-});
+// const s3 = new AWS.S3({
+//   accessKeyId: process.env.AWS_ID,
+//   secretAccessKey: process.env.AWS_SECERE,
+// });
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("ok");
