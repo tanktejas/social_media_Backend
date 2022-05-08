@@ -1,8 +1,10 @@
 {
   "name": "aws_practice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "cool app", 
+  "engines": {
+    "node": "14.17.5"
+    },
   "scripts": { 
     "start": "node server.js"
   },
