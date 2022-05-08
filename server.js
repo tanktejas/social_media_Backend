@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
   res.send("API OK!!");
 });
 
-//get user feedback.
+//get user feed  back.
 app.post("/savecontactinfo", (req, res) => {
   console.log("ok");
   const newobj = new usermessage(req.body);
