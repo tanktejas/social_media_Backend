@@ -48,6 +48,10 @@ const s3 = new AWS.S3({
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+ res.send("ok")
+})
+
 //get user feedback.
 app.post("/savecontactinfo", (req, res) => {
   console.log("ok");
