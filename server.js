@@ -305,6 +305,11 @@ app.post("/sentreq", async (req, res) => {
   }
 });
 
+app.get("*", (req, res) => {
+  res.send("API OK!!");
+});
+
+
 app.listen(port, () => {
   console.log(`Server is up at ${port}`);
 });
